@@ -1,0 +1,18 @@
+trading-engine source tree
+
+trading-engine/
+|
+├── algs/               Trading algorithms used at runtime. Somewhat for test, but will be main focus after product ships.
+|
+├── run/                Runtime components
+|
+├── src/                Main trading-engine source tree
+|   ├── book/           Order book (lock-free skip list)
+|   ├── exec/           Order execution
+|   ├── ingest/         Market data ingestion (order requests), FIX implementation
+|   ├── match/          Order matching engine
+|   ├── ipc/            IPC messaging layer
+|
+├── test/               Unit/F5 Debug tests
+
+
