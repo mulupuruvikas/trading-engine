@@ -9,7 +9,7 @@ trading-engine/
 ├── src/                Main trading-engine source tree
 |   ├── book/           Order book (lock-free skip list)
 |   ├── exec/           Order execution
-|   ├── ingest/         Market data ingestion (order requests), FIX implementation
+|   ├── ingest/         Order request ingestion
 |   ├── match/          Order matching engine
 |   ├── ipc/            IPC messaging layer
 |
