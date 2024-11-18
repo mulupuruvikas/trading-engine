@@ -1,0 +1,15 @@
+Organization for order book:
+
+- gRPC server to recieve orders to match from matching service
+    - Create a .proto file that has a service with a req/res relationship
+        - define the req/res as Orders (check diagram)
+
+    - Create a class that implements the generated server interface
+        - Class should implement the RPC method calls and update the req/res pointers
+
+    - Look how to multi thread per request
+
+- Order book data structure
+    - Create a lock free skip list of available, unfilled orders
+    - Allow for concurrent searches by different threads
+    - Look how to implement and improve the probabilistic nature of the skiplist 
